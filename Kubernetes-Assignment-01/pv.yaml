@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: mysql-pv
+spec:
+  capacity:
+    storage: 10Gi
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Retain  # Specify how the volume should be treated when released
+  storageClassName: standard  # Specify the storage class name if required
+  gcePersistentDisk:
+    pdName: pvc-06e0bbc0-d323-426d-aa31-b89715157676  # Specify the name of your existing GCE Persistent Disk
+    fsType: ext4
