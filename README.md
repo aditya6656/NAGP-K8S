@@ -3,7 +3,7 @@ Run &amp; Deploy NodeJS Application With MySQL on K8S. The app is exposing 1 API
 
 
 
-1. Get all enrolled NAGP users.
+#URL for Service API tier to view the records from backend tier.
 
 ```
 GET http://<LoadbalancerServiceIP>:<ExposedPot>/records
@@ -44,7 +44,7 @@ https://hub.docker.com/r/aditya6656/nagprollingupdate
 ```
 
 
-Video Recording Links-
+#Video Recording Links-
 
 
 ```
